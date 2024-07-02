@@ -1,0 +1,782 @@
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('SoDoSans-Regular.eot');
+    src: local('SoDo Sans Regular'), local('SoDoSans-Regular'),
+        url('SoDoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SoDoSans-Regular.woff2') format('woff2'),
+        url('SoDoSans-Regular.woff') format('woff'),
+        url('SoDoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 75px;
+   
+}
+.navbar img{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 8cm;
+    margin-right: auto;
+    cursor: pointer;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 45px;
+    margin-left: 1cm;
+    margin-right: auto;
+    margin-top: 0.3cm;
+    font: light;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    transition: 0.15s;
+}
+.navbar a:hover{
+    color: rgb(132, 189, 47);
+}
+.navbar .home{
+    margin-left: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #00754a;
+    text-decoration-thickness: 2px;
+    color: #00754a;
+}
+
+.header{
+    background-color: #1E3932;
+    height: 70px;
+    width: 100%;
+    padding-top: 80px;
+    cursor: pointer;
+}
+.starbucks{
+    color: white;
+    float: left;
+    padding: 20px;
+    padding-left: 310px;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    cursor: pointer;
+    font-size: 20px;
+}
+.know-button{
+    float: right;
+    padding: 10px 0px;
+    padding-right: 370px;
+}
+.know-button-1{
+    background-color: #1E3932;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 20px 10px;
+    border-radius: 1.25rem;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+.searchdiv{
+    padding: 20px;
+    padding-left: 1200px;
+}
+.search{
+    font-size: 0.75rem;
+    border-width: 1px;
+    border: 0.1px;
+    padding: 8px 1px;
+    border-radius: 1.5rem;
+    padding-left: 20px;
+    width: 14rem;
+    text-align: center;
+    background-image: url(https://www.starbucks.in/assets/icon/search.svg);
+    background-position: 15px 6px;
+    background-repeat: no-repeat;
+    cursor: text;
+    margin-left: auto;
+    margin-right: 40px;
+    float: left;
+    box-shadow: 0 0 2px #00000012,0 2px 2px #0000000f,0 1px 3px #0000001a;
+}
+.search:focus{
+    border-color: black;
+}
+.login{
+    cursor: pointer;
+    padding: 1px;
+    padding-right: 320px;
+    float: right;
+    width: 33px;
+    height: 33px;
+
+}
+.starbucks-menu-div{
+    padding: 30px 310px;
+    cursor: pointer;
+}
+.starbucks-menu{
+    background-color: #006241;
+    width: 1250px;
+    height: 220px;
+    border-radius: 8px;
+}
+.tea-image-div{
+    display: flex;
+    flex-direction: row;
+}
+.tea-image{
+    width: 100px;
+    height: 240px;
+}
+.menu-text-div{
+  padding: 25px 60px;
+}
+.menu-text{
+    width: 100%;
+    height: 30px;
+    margin: 5px 0;
+    color: white;
+}
+.menu-text-flex{
+    display: flex;
+    flex-direction: column;
+}
+.menu-price-div{
+    padding: 0px 60px;
+    
+}
+.menu-price{
+    margin: 1px;
+    color: white;
+}
+.menu-price-flex{
+    display: flex;
+    flex-direction: row;
+}
+.menu-order-button-div{
+    margin-left: 760px;
+    align-items: center;
+}
+.menu-order-button{
+    border: none;
+    color: white;
+    background-color: #00754a;
+    background-color: w;
+    padding: 5px 50px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 40px;
+    border-radius: 30px;
+    height: 49px;
+    cursor: pointer;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+}
+.handcrafted-curations{
+    padding-left: 310px;
+    padding-bottom: 25px;
+    padding-top: 40px;
+    font-family: SoDoSans_Bold, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.drinks-flex{
+    display: flex;
+    flex-direction: row;
+}
+.bestseller-image{
+    border: 1;
+    border-radius: 400px;
+    height: 100px;
+}
+.bestseller{
+    padding-left: 310px;
+}
+.bestseller-text{
+    padding-left: 15px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.drinks{
+    padding-left: 130px;
+}
+.drinks-image{
+    border: 1;
+    border-radius: 400px;
+    height: 100px;
+}
+.drinks-text{
+    padding-left: 25px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.foods{
+    padding-left: 130px;
+}
+.foods-image{
+    border: 1;
+    border-radius: 400px;
+    height: 100px;
+}
+.foods-text{
+    padding-left: 28px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.merchandise{
+    padding-left: 130px;
+}
+.merchandise-image{
+    border: 1;
+    border-radius: 400px;
+    height: 100px;
+}
+.merchandise-text{
+    padding-left: 8px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.coffeeAtHome{
+    padding-left: 130px;
+}
+.coffeeAtHome-image{
+    border: 1;
+    border-radius: 400px;
+    height: 100px;
+}
+.coffeeAtHome-text{
+    padding-left: 0px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.readytoEat{
+    padding-left: 130px;
+}
+.readytoEat-image{
+    border: 1;
+    border-radius: 400px;
+    height: 100px;
+}
+.readytoEat-text{
+    padding-left: 10px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.barista{
+    padding-top: 100px;
+}
+.barista-bg{
+    background-color: #EDEBE9;
+    padding-bottom: 50px;
+}
+.barista-text{
+    padding-left: 310px;
+    padding-top: 30px;
+    font-family: SoDoSans_Bold, Helvetica, sans-serif;
+}
+.barista-h6{
+    color: #007569;
+    padding-left: 950px;
+    padding-top: 30px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.barista-text-flex{
+    display: flex;
+    flex-direction: row;
+}
+.barista-image{
+    padding-left: 280px;
+    height: 70px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: whitesmoke; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0b7c4c;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0b7c4c; 
+}
+.barista-div-flex{
+    display: flex;
+    flex-direction: row;
+}
+.barista-div{
+    padding-left: 320px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.barista-cappuccino-div{
+    background-color: white;
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00000012,0 2px 8px #0000000f,0 1px 4px #0000001a;
+}
+.barista-signature-div{
+    background-color: white;
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00000012,0 2px 8px #0000000f,0 1px 4px #0000001a;
+}   
+.barista-vanilla-div{
+    background-color: white;
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00000012,0 2px 8px #0000000f,0 1px 4px #0000001a;
+}
+.cappuccino-image-div{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.cappuccino-image{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cappuccino-price-div{
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.cappuccino-price-h4{
+    color: black;
+    padding-top: 4px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.cappuccino-price-p{
+    color: black;
+    padding-top: 5.5px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.cappuccino-button-div{
+    padding-left: 220px;
+    padding-top: 10px;
+    
+}
+.cappuccino-button{
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    background: rgb(0, 117, 74);
+    border: none;
+    box-shadow: 0 0 10px #00000012,0 2px 8px #0000000f,0 1px 4px #0000001a;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.cappuccino-button:hover {
+    background-color: black;
+}  
+.cappuccino-flex{
+    display: flex;
+    flex-direction: row;
+}
+.cappuccino-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.cappuccino-small-image-div{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.cappuccino-name-div{
+    padding-left: 20px;
+}
+.cappuccino-name{
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.cappuccino-des{
+    font-family: Pike_Regular, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.discover{
+    padding-top: 50px;
+}
+.discover-bg{
+    background-color: #EDEBE9;
+    padding-bottom: 40px;
+}
+.discover-head{
+    font-family: SoDoSans_Bold, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    
+}
+.discover-head-div{
+    padding-left: 300px;
+    padding-top: 30px;
+}
+.discover-des-div{
+    padding-left: 800px;
+    padding-top: 30px;
+}
+.discover-des{
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 12.8px;
+    color: #0b7c4c;
+}
+.discover-image{
+    height: 372px;
+    width: 1290px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    background-image: url(https://preprodtsbstorage.blob.core.windows.net/cms/uploads/ICW_Live_Event_Day5_41f11ca3d2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.discover-image-div{
+    padding-left: 315px;
+    padding-top: 30px;
+    position: relative;
+}
+.discover-image-gradient{
+    background: linear-gradient(to top, black, transparent);
+    height: 372px;
+    width: 1290px;
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0.5px;
+}
+.discover-image::before{
+    content: '';
+    position: absolute;
+    height: 372px;
+    width: 1290px;
+    border-radius: 10px;
+    background: 
+        linear-gradient(to bottom,black, transparent);
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+.discover-image:hover::before{
+    opacity: 1;
+}
+.discover-head-text-div{
+    padding-left: 30px;
+}
+.discover-head-text-flex{
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+}
+.coffee-culture{
+    color: #0b7c4c;
+    background-color: rgb(219, 245, 219);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 9px;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    border-radius: 3px;
+    font-weight: bolder;
+    letter-spacing: 0.54px;
+    margin-right: 500px;
+}
+.discover-head-art-div{
+    padding-left: 30px;
+    padding-top: 170px;
+}
+.discover-head-art{
+    color: white;
+    font-family:  SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.discover-head-master-div{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.discover-head-master{
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.discover-head-button-div{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.discover-head-button{
+    border: none;
+    color: black;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: white;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 12px;
+    font-stretch: 100%;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.discover-head-button:hover{
+    background-color: whitesmoke;
+}
+.footer-main-div{
+    padding-top: 50px;
+}
+.footer-bg{
+    background-color: #0E382C;
+    padding-bottom: 50px;
+}
+.footer-logo-div{
+    padding-left: 300px;
+    padding-top: 130px;
+}
+.footer-about-div{
+    padding-left: 150px;
+    padding-top: 130px;
+}
+.footer-about{
+    color: white;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.footer-heritage-div{
+    padding-left: 150px;
+    padding-top: 20px;
+}
+.footer-heritage{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-coffeehouse-div{
+    padding-left: 150px;
+    padding-top: 30px;
+}
+.footer-coffeehouse{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-company-div{
+    padding-left: 150px;
+    padding-top: 30px;
+}
+.footer-company{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-responsibility-div{
+    padding-left: 150px;
+    padding-top: 125px;
+}
+.footer-responsibility{
+    color: white;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.footer-diversity-div{
+    padding-left: 150px;
+    padding-top: 20px;
+}
+.footer-diversity{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-community-div{
+    padding-left: 150px;
+    padding-top: 35px;
+}
+.footer-community{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-ethical-div{
+    padding-left: 150px;
+    padding-top: 35px;
+}
+.footer-ethical{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-environmental-div{
+    padding-left: 150px;
+    padding-top: 35px;
+}
+.footer-environmental{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-learn-div{
+    padding-left: 150px;
+    padding-top: 35px;
+}
+.footer-learn{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-links-div{
+    padding-left: 80px;
+    padding-top: 125px;
+}
+.footer-links{
+    color: white;
+    font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+.footer-policy-div{
+    padding-left: 80px;
+    padding-top: 35px;
+}
+.footer-policy{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 50;
+}
+.footer-social-div{
+    padding-top: 125px;
+}
+.footer-instagram{
+    padding-top: 20px;
+    cursor: pointer;
+}
+.footer-facebook{
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.footer-twitter{
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.footer-ios{
+    padding-top: 120px;
+    padding-left: 80px;
+    cursor: pointer;
+}
+.footer-android{
+    padding-top: 5px;
+    padding-left: 80px;
+    cursor: pointer;
+}
+.footer-line-div{
+    padding-left: 300px;
+    padding-top: 100px;
+}
+.footer-line{
+    width: 1400px;
+    height: 1px;
+    background-color: grey;
+}
+.footer-accessibility-div{
+    padding-left: 300px;
+    padding-top: 20px;
+}
+.footer-accessibility{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 50;
+}
+.footer-last-line-div{
+    padding-left: 20px;
+    padding-top: 18px;
+}
+.footer-last-line{
+    text-decoration: none;
+    color: white;
+    font-family: SoDoSans_Light, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.footer-privacy-div{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.footer-copyright-div{
+    padding-left: 650px;
+    padding-top: 20px;
+}
